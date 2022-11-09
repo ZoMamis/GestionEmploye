@@ -18,8 +18,7 @@
             break;
         default:
             # logique...
-            $data = $db->query("SELECT * FROM employe");
-            var_dump($data);
+            $data = $db->getData("SELECT * FROM employe");
             require_once "View/index.php";
             break;
     }

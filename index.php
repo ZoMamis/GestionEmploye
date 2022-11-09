@@ -3,7 +3,7 @@
     $db = new employe();
 
     if(isset($_GET['Controller'])){
-        $controller =$_GET['controller'];
+        $controller =$_GET['Controller'];
     }else{
         $controller ="";
     }

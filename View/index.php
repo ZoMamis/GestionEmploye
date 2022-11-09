@@ -19,14 +19,14 @@
         </thead>
         <tbody>
             <?php
-            foreach ($data as $key=> $$employe){
+                foreach ($data as $employe){
                 ?>
                 <tr>
                 <td><?=$employe['nom_employe']?></td>
                 <td><?=$employe['prenom_employe']?></td>
                 <td>
-                    <a href="employeController?Controller=employe&action=modifier&id=<?=$employe['id_employe']?>" class="btn"></a>
-                    <a href="employeController?Controller=employe&action=supprimer&id=<?=$employe['id_employe']?>" class="btn"></a>
+                    <a href="employeController?Controller=employe&action=modifier&id=<?=$employe['id_employe']?>" class="btn">Modifier</a>
+                    <a href="employeController?Controller=employe&action=supprimer&id=<?=$employe['id_employe']?>" class="btn">Supprimer</a>
                 </td>
             </tr>
                 <?php
