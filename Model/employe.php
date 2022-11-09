@@ -13,7 +13,7 @@ class employe extends dbConfig{
     }
 
     public function action($sql){
-        $this->conn->exec($sql);
+        $this->conn->query($sql);
     }
 }
 
