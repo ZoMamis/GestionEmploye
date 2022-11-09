@@ -8,7 +8,7 @@
     <title>Gestion Employé</title>
 </head>
 <body>
-    <a href="employeController.php?Controller=employe&action=ajout" class="btn">Ajout</a>
+    <a href="index.php?Controller=employe&action=ajout" class="btn">Ajout</a>
     <table>
         <thead>
             <tr>
