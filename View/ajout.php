@@ -8,7 +8,7 @@
 </head>
 <body>
     <h2>Ajout Employé</h2>
-    <form method="POST">
+    <form method="POST" action="index.php?Controller=employe&action=create">
         <label for="name">Nom Employé</label>
         <input type="text" name="nom_employe" id=""><br><br>
         <label for="name">Prénom Employé</label>
