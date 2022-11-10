@@ -50,6 +50,11 @@
                 //UPDATE `employe` SET `nom_employe` = 'Atory' WHERE `employe`.`id` = 4;
         case "supprimer":
             # logique...
+            if(isset($_GET['id'])){
+                $id = $_GET['id'];
+                $db->action("DELETE FROM employe WHERE id = '$id' ");
+                header("Location:index.php?Controller=employe");
+            }
             break;
         default:
             # logique...
