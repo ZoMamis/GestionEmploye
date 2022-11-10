@@ -5,24 +5,20 @@
         $action = "";
     }
     switch ($action) {
-        case "ajout":             
+        case "ajout":
+            # logique...
+             if (isset($_POST['submit'])) {
+                $nom_employe = $_POST['nom_employe'];
+                $prenom_employe = $_POST['prenom_employe'];
+                if (empty($nom_employe) || empty($prenom_employe)) {
+                    $error = "Not null";
+                }else{
+                    $db->action("INSERT INTO employe (nom_employe, prenom_employe) VALUES ('$nom_employe','$prenom_employe')");
+                    header("Location:index.php?Controller=employe");
+                }
+             }
             require_once "View/ajout.php";
             break;
-            case "create":
-                # logique...
-
-                    $nom_employe = $_POST['nom_employe'];
-                    $prenom_employe = $_POST['prenom_employe'];
-
-                    if (empty($nom_employe) || empty($prenom_employe)) {
-                        $error = "Not null";
-                        print_r($error);
-                    }else{
-                        $db->action("INSERT INTO employe (nom_employe, prenom_employe) VALUES ('$nom_employe','$prenom_employe')");
-                        header("Location:index.php?Controller=employe");
-                    }
-
-                break;
         case "modifier":
             if(isset($_GET['id'])){
                 $id = $_GET['id'];
