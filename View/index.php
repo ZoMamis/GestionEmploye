@@ -9,7 +9,7 @@
 </head>
 <body>
     <a href="index.php?Controller=employe&action=ajout" class="btn">Ajout</a>
-    <table>
+    <table class="border">
         <thead>
             <tr>
                 <td>Nom Employé</td>
@@ -25,8 +25,8 @@
                 <td><?=$employe['nom_employe']?></td>
                 <td><?=$employe['prenom_employe']?></td>
                 <td>
-                    <a href="employeController?Controller=employe&action=modifier&id=<?=$employe['id_employe']?>" class="btn">Modifier</a>
-                    <a href="employeController?Controller=employe&action=supprimer&id=<?=$employe['id_employe']?>" class="btn">Supprimer</a>
+                    <a href="index.php?Controller=employe&action=modifier&id=<?=$employe['id']?>" class="btn">Modifier</a>
+                    <a href="index.php?Controller=employe&action=supprimer&id=<?=$employe['id']?>" class="btn">Supprimer</a>
                 </td>
             </tr>
                 <?php

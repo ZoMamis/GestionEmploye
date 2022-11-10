@@ -8,12 +8,12 @@
 </head>
 <body>
     <h2>Ajout Employé</h2>
-    <form method="POST">
+    <form method="POST" action="index.php?Controller=employe&action=create">
         <label for="name">Nom Employé</label>
-        <input type="text" name="nom_employe" id=""><br><br>
+        <input type="text" name="nom_employe"><br><br>
         <label for="name">Prénom Employé</label>
-        <input type="text" name="prenom_employe" id=""><br><br>
-        <input type="submit" value="Ajouter">
+        <input type="text" name="prenom_employe"><br><br>
+        <input type="submit" value="ajout">
     </form>
 </body>
 </html>
