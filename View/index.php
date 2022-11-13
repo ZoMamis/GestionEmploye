@@ -22,11 +22,11 @@
                 foreach ($data as $employe){
                 ?>
                 <tr>
-                <td><?=$employe['nom_employe']?></td>
-                <td><?=$employe['prenom_employe']?></td>
+                <td><?php echo $employe['nom_employe']?></td>
+                <td><?php echo $employe['prenom_employe']?></td>
                 <td>
-                    <a href="index.php?Controller=employe&action=modifier&id=<?=$employe['id']?>" class="btn">Modifier</a>
-                    <a href="index.php?Controller=employe&action=supprimer&id=<?=$employe['id']?>" class="btn">Supprimer</a>
+                    <a href="index.php?Controller=employe&action=modifier&id=<?php echo $employe['id_employe']; ?>" class="btn">Modifier</a>
+                    <a href="index.php?Controller=employe&action=supprimer&id=<?php echo $employe['id_employe']; ?>" class="btn">Supprimer</a>
                 </td>
             </tr>
                 <?php
